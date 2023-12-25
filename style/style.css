@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Color Palette :
+                    #262626  Eerie black
+                    #EBEBEB  Anti-flash white
+                    #F4E0E6  Lavander blush
+                    #EFD2DB  Mimi pink     (darker)
+                    #EAC3CE  Fairy Tale    (darkest)
+*/
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Inter', sans-serif; */
+/*------------------------------HEADER-----------------------*/
+header {
+    background-color: #EFD2DB;
+    position: sticky;
+    top: 0rem;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    z-index: 10;
+    
+}
+.top-menu-links {
+    text-align: center;
+    padding-block: 1rem;
+    border-bottom: solid;
+}
+.top-menu-links:hover {
+    border-color: #929292;
+    margin-inline: .5rem;
+    
+}
+
+.top-menu-links>h2>a:hover {
+    font-weight: bold;
+}
+
+.top-menu-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* En un futuro quitar esto y convertilo en un menu cuando se haga mas chico*/
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.top-menu-links>h2>a {
+    color: #262626;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+}
+
+/* ---------------------MAIN-----BODY------------------- */
+main {
+    background-color: #f4e0e6b4;
+    /* background-image: url("../img/logo-sin-fondo.PNG");
+    background-repeat:repeat-y; */
+    background-position: center top;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ---------------------HOME-PAGE------------------------ */
+.home-text {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+/* ------------------------------------------------------- */
+
+/* ---------------------Agenda-Tu-Cita------------------------ */
+
+.boton {
+    background-color: #EAC3CE;
+    color: #262626;
+    border-color: #EAC3CE;
+}
+.boton:hover {
+    background-color: #EAC3CE;
+    border-color: #262626;
+    color: #262626;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/*---------------Servicios-------------------*/
+.galeria-servicios {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.ul-li-servicios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+
+   
+    @media (min-width: 480px) and (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+ 
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    gap: 1rem;
+}
+
+
+
+.lista-servicios img {
+    width: 100%;
+    height: auto;
+}
+/*----------------------------------*/
+/*------------Productos----------------------*/
+.galeria-servicios {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.ul-li-productos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr; 
+
+    @media (min-width: 480px) and (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    gap: 1rem; 
+}
+
+.lista-productos img {
+    width: 100%;
+    height: auto;
+}
+/*----------------------------------*/
+.sobre-nosotros {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.sobre {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sobre-texto {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.productos-p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.servicios-p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* -------------------------FOOTER------------------------- */
+footer {
+    background-color: #262626;
+}
+
+.direccion {
+    align-content: center;
+    background-position: center;
+    text-align: center;
+}
+
+iframe {
+    /* border: 0; */
+    width: 50%;
+    border-style: hidden;
+    padding: 1rem;
+
+}
+
+.sociales {
+    font-style: normal;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+
+/* ----------------------IMAGES---------------------------- */
+
+
+.img-home img {
+    display: block;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.texto-img-home {
+    text-align: justify;
+    padding-block: 2rem;
+}
+
