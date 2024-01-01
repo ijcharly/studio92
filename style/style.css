@@ -26,11 +26,10 @@ header {
     position: sticky;
     top: 0rem;
     width: 100%;
-    font-family: 'Inter', sans-serif;
     z-index: 10;
-    
+
 }
-.top-menu-links {
+/* .top-menu-links {
     text-align: center;
     padding-block: 1rem;
     border-bottom: solid;
@@ -39,16 +38,14 @@ header {
     border-color: #929292;
     margin-inline: .5rem;
     
-}
+} 
 
-.top-menu-links>h2>a:hover {
-    font-weight: bold;
-}
+
 
 .top-menu-ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* En un futuro quitar esto y convertilo en un menu cuando se haga mas chico*/
+    flex-wrap: wrap; /* En un futuro quitar esto y convertilo en un menu cuando se haga mas chico
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -65,6 +62,37 @@ header {
     font-weight: 500;
 }
 
+*/
+
+.toggler-div{
+    padding: 1rem;
+    cursor: pointer;
+    border-style: hidden;
+}
+
+.navbar-link-li{
+    color: #262626;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform:uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-block: 2rem;
+}
+
+.navbar-link-li:hover{
+    font-weight: 500;
+    padding-block: 1.9rem;
+    border-bottom: solid;
+    
+}
+
+
+.img-home{
+    max-width: 4.5rem;
+    padding-left: 1rem;
+}
 /* ---------------------MAIN-----BODY------------------- */
 main {
     background-color: #f4e0e6b4;
@@ -72,13 +100,17 @@ main {
     background-repeat:repeat-y; */
     background-position: center top;
     font-family: 'Inter', sans-serif;
-    padding: 2rem;
-
+    padding-block: 4rem;
+    padding-inline: 6rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
 }
 
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    
 }
 
 /* ---------------------HOME-PAGE------------------------ */
@@ -102,8 +134,18 @@ body {
     color: #262626;
 }
 
+.agenda-tu-cita {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
 
-
+.formulario{
+    padding: 2rem;
+    border: solid;
+    border-color: #26262635;
+    border-radius: .8rem;
+}
 
 
 
@@ -119,6 +161,8 @@ body {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 0;
+
 
    
     @media (min-width: 480px) and (max-width: 960px) {
@@ -151,6 +195,7 @@ body {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr; 
+    padding-left: 0;
 
     @media (min-width: 480px) and (max-width: 960px) {
         grid-template-columns: repeat(2, 1fr);
@@ -197,6 +242,7 @@ body {
 /* -------------------------FOOTER------------------------- */
 footer {
     background-color: #262626;
+    margin-top: auto;
 }
 
 .direccion {

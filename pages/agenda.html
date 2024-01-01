@@ -16,96 +16,82 @@
 
     <!---------------------------------------Header------------------------------------------------->
     <header>
-        <nav>
-            <section class="top-menu">
-                <ul class="top-menu-ul">
-                    <li class="top-menu-links">
-                        <h2><a href="./agenda.html">Agenda tu cita</a></h2>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="../index.html"><img class="img-home" src="../img/logo-sin-fondo.PNG" alt="Studio92" ></a>
+                <div class="navbar-toggler toggler-div" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+                    <li class="nav-item ">
+                      <a class="nav-link navbar-link-li" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    <li class="top-menu-links">
-                        <h2><a href="./servicios.html">Servicios</a></h2>
+                    <li class="nav-item ">
+                      <a class="nav-link navbar-link-li" aria-current="page" href="./agenda.html">Agenda Cita</a>
                     </li>
-                    <li class="top-menu-links">
-                        <h2><a href="../index.html">Home</a></h2>
+                    <li class="nav-item ">
+                      <a class="nav-link navbar-link-li" aria-current="page" href="./servicios.html">Servicios</a>
                     </li>
-                    <li class="top-menu-links">
-                        <h2><a href="./productos.html">Productos</a></h2>
+                    <li class="nav-item ">
+                      <a class="nav-link navbar-link-li" aria-current="page" href="./productos.html">Productos</a>
                     </li>
-                    <li class="top-menu-links">
-                        <h2><a href="./sobre.html">Sobre Nosotros</a></h2>
+                    <li class="nav-item ">
+                      <a class="nav-link navbar-link-li" aria-current="page" href="./sobre.html">Sobre Nosotros</a>
                     </li>
-                </ul>
-            </section>
+                  </ul>
+                </div>
+              </div>
         </nav>
     </header>
-    <!---------------------------------------Header------------------------------------------------->
+    <!------------------------------------------------------------------------------------------->
 
 
     <!----------------------------------------------Main-------------------------------------------->
     <main>
-        <!-- <form class="agenda-cita">
-            <div>
-                <label for="nombre" class="info">Nombre</label>
-                <input type="text" placeholder="Ingrese Texto" class="info-input">
+        <p class="agenda-tu-cita mb-3">AGENDA TU CITA</p>
+        <form class="row formulario ">
+            <div class="mb-3 col-12 col-md-6">
+                <label for="nombre-apellido" class="form-label">Nombre *</label>
+                <input type="text" class="form-control" id="nombre-apellido" placeholder="Nombre y Apellido">
             </div>
-            <div>
-                <label for="telefono" class="info">Telefono</label>
-                <input type="number" placeholder="Ingresa tu numero" class="info-input">
-            </div>
-            <div>
-                <label for="email" class="info">Email</label>
-                <input type="email" placeholder="Ingrese Texto" class="info-input">
-            </div>
-            <div>
-                <label for="fecha" class="info">Fecha:</label>
-                <input type="date" name="birthday" class="info-input">
-            </div>
-            <div>
-                <textarea cols="30" rows="5" placeholder="Comentarios"></textarea>
-            </div>
-            <div>
-                <h3>Acepta terminos y condiciones</h3>
-                <label for="si">Si</label>
-                <input type="radio" name="terminosycondiciones" class="radio-boton">
-
-                <label for="no">No</label>
-                <input type="radio" name="terminosycondiciones" class="radio-boton">
-
-            </div>
-            <div class="submit">
-                <input type="submit" >
-            </div>
-        </form> -->
-        <form class="formulario">
-            <div class="mb-3">
-                <label for="nombre-apellido" class="form-label">Email address *</label>
-                <input type="text" class="form-control" id="nombre-apellido" placeholder="Nombre y Apellido"
-                    required>
-            </div>
-            <div class="mb-3">
+            <div class="mb-3 col-12 col-md-6">
                 <label for="telefono" class="form-label">Telefono *</label>
-                <input type="tel" min="0" max="10" class="form-control" id="telefono" required>
+                <input type="tel" min="0" max="10" class="form-control" id="telefono" placeholder="10 digitos">
             </div>
-            <div class="mb-3">
-                <label for="correo" class="form-label">Email address *</label>
-                <input type="email" class="form-control" id="correo" placeholder="name@example.com"
-                    required>
+            <div class="mb-3 col-12 col-md-6">
+                <label for="correo" class="form-label">Correo Electronico *</label>
+                <input type="email" class="form-control" id="correo" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 col-12 col-md-6 has-validation">
+                <label for="correo" class="form-label">Servicio a solicitar *</label>
+                <select class="form-select " aria-label="">
+                    <option selected disabled hidden>Seleccione uno</option>
+                    <option value="1">Planchado</option>
+                    <option value="2">Pestañas</option>
+                    <option value="3">Facial</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
                 <label for="fecha-hora" class="form-label">Fecha y Hora *</label>
             </div>
             <div class="mb-3 input-group">
-                <input type="date" aria-label="First name" class="form-control" id="fecha-hora"  required>
-                <input type="time" aria-label="Last name" class="form-control"  id="fecha-hora" required>
+                <input type="date" aria-label="First name" class="form-control" id="fecha-hora">
+                <input type="time" aria-label="Last name" class="form-control" id="fecha-hora">
             </div>
-            <div class="mb-3 form-check">
+            <div class="mb-3">
                 <input type="checkbox" class="form-check-input" id="checkbox">
                 <label class="form-check-label" for="checkbox">Desea recibir promociones?</label>
             </div>
-            <button type="submit" class="btn btn-primary boton">Submit</button>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary boton">Submit</button>
+            </div>
         </form>
     </main>
-    <!----------------------------------------------Main-------------------------------------------->
+    <!-------------------------------------------------------------------------------------------->
 
 
     <!-----------------------------------------------Footer----------------------------------------->
