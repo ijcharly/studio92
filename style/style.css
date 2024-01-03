@@ -22,47 +22,13 @@ img {
 font-family: 'Inter', sans-serif; */
 /*------------------------------HEADER-----------------------*/
 header {
-    background-color: #EFD2DB;
+    background-color: #EAC3CE;
     position: sticky;
     top: 0rem;
-    width: 100%;
+    min-width: 100%;
     z-index: 10;
 
 }
-/* .top-menu-links {
-    text-align: center;
-    padding-block: 1rem;
-    border-bottom: solid;
-}
-.top-menu-links:hover {
-    border-color: #929292;
-    margin-inline: .5rem;
-    
-} 
-
-
-
-.top-menu-ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; /* En un futuro quitar esto y convertilo en un menu cuando se haga mas chico
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 0;
-}
-
-.top-menu-links>h2>a {
-    color: #262626;
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 500;
-}
-
-*/
 
 .toggler-div{
     padding: 1rem;
@@ -82,7 +48,6 @@ header {
 }
 
 .navbar-link-li:hover{
-    font-weight: 500;
     padding-block: 1.9rem;
     border-bottom: solid;
     
@@ -92,16 +57,27 @@ header {
 .img-home{
     max-width: 4.5rem;
     padding-left: 1rem;
+    
 }
+
+.brand-name{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: .1rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 /* ---------------------MAIN-----BODY------------------- */
 main {
     background-color: #f4e0e6b4;
     /* background-image: url("../img/logo-sin-fondo.PNG");
     background-repeat:repeat-y; */
+    min-width: 100%;
     background-position: center top;
     font-family: 'Inter', sans-serif;
     padding-block: 4rem;
-    padding-inline: 4rem;
+    padding-inline: 3rem;
     display: flex;
     flex-direction: column;
     min-height: 80vh;
