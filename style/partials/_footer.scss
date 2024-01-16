@@ -1,6 +1,7 @@
 footer {
     background-color: #262626;
     margin-top: auto;
+    color: $white;
 }
 
 .direccion {
@@ -11,15 +12,17 @@ footer {
 
 iframe {
     /* border: 0; */
-    width: 50%;
+    width: 75%;
+    max-height: 7rem;
     border-style: hidden;
     padding: 1rem;
+    border-radius: 1.5rem;
 
 }
 
 .sociales {
     font-style: normal;
-    color: #EBEBEB;
+    color:$white;
     text-align: center;
     padding: 1rem;
 

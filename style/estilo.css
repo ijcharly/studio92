@@ -9,6 +9,10 @@ img {
   max-width: 100%;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 /* Color Palette :
                     #262626  Eerie black
                     #EBEBEB  Anti-flash white
@@ -97,7 +101,6 @@ body {
   background-color: #EBEBEB;
   transition: all;
   transition-duration: 0.5s;
-  text-decoration: underline;
 }
 
 /* ------------------------------------------------------- */
@@ -173,18 +176,33 @@ body {
 }
 
 /*----------------------------------*/
-.sobre-nosotros {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-}
-
 .heading-mediano {
-  font-size: 3rem;
+  font-size: 1.7rem;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .heading-mediano {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 993px) {
+  .heading-mediano {
+    font-size: 3rem;
+  }
 }
 
 .texto-normal {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   text-align: unset;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .texto-normal {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 993px) {
+  .texto-normal {
+    font-size: 1.4rem;
+  }
 }
 
 .productos-p {
@@ -202,6 +220,7 @@ body {
 footer {
   background-color: #262626;
   margin-top: auto;
+  color: #EBEBEB;
 }
 
 .direccion {
@@ -212,9 +231,11 @@ footer {
 
 iframe {
   /* border: 0; */
-  width: 50%;
+  width: 75%;
+  max-height: 7rem;
   border-style: hidden;
   padding: 1rem;
+  border-radius: 1.5rem;
 }
 
 .sociales {
