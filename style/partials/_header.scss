@@ -1,0 +1,48 @@
+header {
+    background-color: #EAC3CE;
+    position: sticky;
+    top: 0rem;
+    min-width: 100%;
+    z-index: 10;
+
+}
+
+.toggler-div{
+    padding: 1rem;
+    cursor: pointer;
+    border-style: hidden;
+}
+
+.navbar-link-li{
+    color: #262626;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform:uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-block: 2rem;
+}
+
+.navbar-link-li:hover{
+    padding-block: 1.9rem;
+    border-bottom: solid;
+
+    transition: all ;
+    transition-duration: .5s;
+    
+}
+
+
+.img-home{
+    max-width: 4.5rem;
+    padding-left: 1rem;
+    
+}
+
+.brand-name{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}

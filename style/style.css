@@ -20,6 +20,8 @@ img {
 
 /* font-family: 'Dancing Script', cursive;
 font-family: 'Inter', sans-serif; */
+
+
 /*------------------------------HEADER-----------------------*/
 header {
     background-color: #EAC3CE;
@@ -69,7 +71,7 @@ header {
 
 /* ---------------------MAIN-----BODY------------------- */
 main {
-    background-color: #f4e0e6b4;
+    background-color: #F4E0E6;
     /* background-image: url("../img/logo-sin-fondo.PNG");
     background-repeat:repeat-y; */
     min-width: 100%;
@@ -84,7 +86,7 @@ main {
 
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     
 }
 

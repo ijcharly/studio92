@@ -8,7 +8,7 @@
   <title>Studio92</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/estilo.css">
   <link rel="icon" href="../img/fav-icon.png">
 </head>
 
@@ -51,16 +51,135 @@
 
   <!----------------------------------------------Main-------------------------------------------->
   <main>
-    <p class="productos-p">Productos</p>
-    <div class="galeria-productos">
-      <ul class="ul-li-productos">
-        <li class="lista-productos"><img src="../img/producto.jpeg" alt="imagen Productos"></li>
-        <li class="lista-productos"><img src="../img/producto.jpeg" alt="imagen Productos"></li>
-        <li class="lista-productos"><img src="../img/producto.jpeg" alt="imagen Productos"></li>
-        <li class="lista-productos"><img src="../img/producto.jpeg" alt="imagen Productos"></li>
-        <li class="lista-productos"><img src="../img/producto.jpeg" alt="imagen Productos"></li>
-        <li class="lista-productos"><img src="../img/producto.jpeg" alt="imagen Productos"></li>
-      </ul>
+    <div class="container mt-2">
+      <h2 class="display-4 mb-4 text-center">Productos</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="../img/crema-facial.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+              <h5 class="card-title">Crema Facial Rejuvenecedora:</h5>
+              <p class="card-text">Transforma tu rutina de cuidado facial con nuestra crema rejuvenecedora. Enriquecida con ingredientes naturales y antioxidantes</p>
+              <p class="card-text">$199.99</p>
+              <button type="button" class="btn boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Gracias por su compra</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn boton" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="../img/maquillaje.jpg" class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Kit de Maquillaje Esencial:</h5>
+              <p class="card-text">Descubre la magia del maquillaje con nuestro kit esencial. Ideal para crear looks de día o noche, este kit es imprescindible para cualquier amante del maquillaje.</p>
+              <p class="card-text">$249.99</p>
+
+              <button type="button" class="btn boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Gracias por su compra</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn boton" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="../img/aceite.jpg" class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Aceite Capilar Reparador:</h5>
+              <p class="card-text">Revitaliza tu cabello con nuestro aceite capilar reparador. Este elixir ligero ayuda a restaurar la suavidad y brillo natural de tu cabello.</p>
+              <p class="card-text">$349.99</p>
+              <button type="button" class="btn boton " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Gracias por su compra</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn boton" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="../img/perfume.jpg" class="card-img-top" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Fragancia Floral Exquisita:</h5>
+              <p class="card-text">Esta fragancia cautivadora te envolverá en una experiencia sensorial única. </p>
+              <p class="card-text">$399.99</p>
+              <button type="button" class="btn boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Gracias por su compra</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </main>
   <!----------------------------------------------Main-------------------------------------------->
@@ -75,9 +194,8 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="sociales">
-      <h3>Sobre nosotros</h3>
-      <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum porro enim maiores laborum, ullam
-        reprehenderit ipsa? Odit dolores tenetur recusandae.</h5>
+      <h3>En Studio92</h3>
+      <h5>Nos esforzamos por la excelencia en cada aspecto de nuestro servicio, para proporcionar una experiencia estética incomparable.</h5>
       <h3>Contacto</h3>
       <img src="../img/social/instagram.png" alt="ig" width="50px" height="60px">
       <img src="../img/social/whatsapp.png" alt="wp" width="50px" height="60px">

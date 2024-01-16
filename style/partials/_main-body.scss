@@ -1,0 +1,165 @@
+main {
+    background-color: #F4E0E6;
+    /* background-image: url("../img/logo-sin-fondo.PNG");
+    background-repeat:repeat-y; */
+    min-width: 100%;
+    background-position: center top;
+    font-family: 'Inter', sans-serif;
+    padding-block: 3rem;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+/* ---------------------HOME-PAGE------------------------ */
+
+.texto-img-carrusel {
+    color:$black;
+    font-weight: 500;
+    background-color:rgba(255, 255, 255, 0.365);
+    border-radius: .5rem;
+    padding-inline: .2rem;
+}
+.links-carrusel {
+    text-decoration: none;
+    & :hover {
+        background-color: $white;
+        transition: all ;
+        transition-duration: .5s;
+        text-decoration:underline;
+    }
+}
+/* ------------------------------------------------------- */
+
+/* ---------------------Agenda-Tu-Cita------------------------ */
+
+.boton {
+    background-color: #EAC3CE;
+    color: #262626;
+    border-color: #EAC3CE;
+}
+.boton:hover {
+    background-color: #EAC3CE;
+    border-color: #262626;
+    color: #262626;
+}
+
+.agenda-tu-cita {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.formulario{
+    padding: 2rem;
+    border: solid;
+    border-color: #26262635;
+    border-radius: .8rem;
+}
+
+
+
+/* ------------------------------------------------------- */
+/*---------------Servicios-------------------*/
+.galeria-servicios {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.ul-li-servicios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+
+
+   
+    @media (min-width: 576px) and (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+ 
+    @media (min-width: 993px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    gap: 1rem;
+}
+
+
+
+.lista-servicios img {
+    width: 100%;
+    height: auto;
+}
+/*----------------------------------*/
+/*------------Productos----------------------*/
+// .galeria-servicios {
+//     display: grid;
+//     grid-template-columns: auto;
+//     padding: 10px;
+// }
+
+// .ul-li-productos {
+//     list-style: none;
+//     display: grid;
+//     grid-template-columns: 1fr; 
+//     padding-left: 0;
+
+//     @media (min-width: 576px) and (max-width: 992px) {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     @media (min-width: 992px) {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+
+//     gap: 1rem; 
+// }
+
+.table-productos {
+    & th{
+        text-align: center;
+    }
+    & td{
+        text-align: center;
+    }
+}
+
+.lista-productos img {
+    width: 100%;
+    height: auto;
+}
+/*----------------------------------*/
+.sobre-nosotros {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.heading-mediano {
+    font-size: 3rem;
+}
+
+.texto-normal {
+    font-size: 1.5rem;
+    text-align:unset;
+}
+
+.productos-p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.servicios-p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}

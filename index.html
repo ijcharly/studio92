@@ -8,7 +8,7 @@
   <title>Studio92</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/estilo.css">
   <link rel="icon" href="./img/fav-icon.png">
 </head>
 
@@ -18,8 +18,8 @@
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid ">
-        <a class="navbar-brand" href="./index.html"><img class="img-home d-inline-block"
-            src="./img/logo-sin-fondo.PNG" alt="Studio92"></a><span class=" brand-name">Studio 92</span>
+        <a class="navbar-brand" href="./index.html"><img class="img-home d-inline-block" src="./img/logo-sin-fondo.PNG"
+            alt="Studio92"></a><span class=" brand-name">Studio 92</span>
         <div class="navbar-toggler toggler-div" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,24 +51,60 @@
 
   <!----------------------------------------------Main-------------------------------------------->
   <main>
-    <p class="home-text"> WELCOME</p>
-    <div class="img-home"> <img src="./img/spa.jpg" alt="imagen home"></div>
-    <p class="texto-img-home">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptates quibusdam
-      harum. Minus quas perferendis ea dolore aperiam iure nulla quibusdam placeat architecto, vero non velit
-      tempore, nemo, a sapiente. Accusantium quibusdam quaerat odio eum praesentium odit, ad maiores maxime,
-      expedita, eveniet necessitatibus. Sed illum, hic velit repellendus excepturi voluptatem. Qui, ad soluta sed
-      porro aspernatur eligendi fugit aliquam odit sapiente ducimus animi ipsum vitae aperiam nesciunt repellendus
-      consequuntur! Cumque reprehenderit delectus rerum praesentium in quae numquam dolorem, sunt non repellendus,
-      veniam ipsa, nemo eos a placeat ipsam laboriosam magnam. Voluptates minus provident possimus reiciendis
-      voluptas nihil, ipsam at culpa inventore tempore, excepturi quaerat, placeat aliquam nulla atque!
-      Voluptatibus, quo maiores illo non a natus error tempora vero eos dolore quos aliquam temporibus asperiores
-      sapiente accusantium rem voluptatum fugit maxime harum facere impedit animi quod doloribus sunt. Itaque iste
-      tempora eveniet, minus, quisquam deserunt cupiditate libero optio assumenda cumque repellendus doloribus
-      ipsam? Vitae autem non impedit alias, repellat quis voluptates aliquam at ducimus iste explicabo, provident
-      eaque a saepe ea quo, eius eum! Aut reprehenderit cumque rem quo repudiandae, alias excepturi voluptate
-      recusandae exercitationem ipsum in corrupti ea, assumenda est neque laborum ex vero sapiente ratione.
-      Accusantium nostrum ipsum sint.
-    </p>
+
+    <div id="features" class="home-carrusel mb-4">
+      <div class="container">
+
+        <div class="row">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/tratamiento-facial.jpg" class="d-block w-100" alt="Imagen 1">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+                  <a class="links-carrusel" href="./pages/servicios.html">
+                    <p class="display-2 texto-img-carrusel">Servicios de Belleza</p>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/belleza.jpg" class="d-block w-100" alt="Imagen 2">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+                  <a class="links-carrusel" href="./pages/productos.html">
+                    <p class="display-2 texto-img-carrusel">Productos de Belleza</p>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/agenda.jpg" class="d-block w-100" alt="Imagen 3">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+                  <a class="links-carrusel" href="./pages/agenda.html">
+                    <p class="display-2 texto-img-carrusel">Agenda tu Cita</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <p class="heading-mediano text-center mb-4">Bienvenido a Studio92</p>
+    <p class="texto-normal">Estamos encantados de darte la bienvenida a nuestro espacio dedicado a realzar tu belleza y bienestar. En Studio92, nos apasiona ofrecerte una experiencia única, donde podrás desconectar del estrés diario y resaltar tu belleza natural.
+
+      Nuestro talentoso equipo de profesionales altamente capacitados está aquí para brindarte servicios de alta calidad, desde tratamientos faciales rejuvenecedores hasta cortes de cabello modernos y personalizados. Nos esforzamos por crear un ambiente acogedor y relajante, donde te sientas mimado/a y cuidado/a en cada visita.
+      
+      Explora nuestra gama de servicios diseñados para realzar tu belleza interior y exterior. </p>
+
+
+
   </main>
   <!----------------------------------------------Main-------------------------------------------->
 
@@ -81,11 +117,8 @@
         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="sociales">
-      <h3>Sobre nosotros</h3>
-      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto repellendus placeat! Eos dolores
-        autem enim tenetur sunt mollitia necessitatibus adipisci officiis dolorum quia in cumque nulla ab, rem
-        porro beatae! Repellat maiores aspernatur maxime nam beatae, sed veniam repellendus quas doloremque
-        magni aut commodi reiciendis facere vitae ut rem!</h5>
+      <h3>En Studio92</h3>
+      <h5>Nos esforzamos por la excelencia en cada aspecto de nuestro servicio, para proporcionar una experiencia estética incomparable.</h5>
       <h3>Contacto</h3>
       <div>
         <img src="./img/social/instagram.png" alt="ig" class="iconos-redes">
