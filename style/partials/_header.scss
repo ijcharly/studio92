@@ -41,8 +41,10 @@ header {
 }
 
 .brand-name{
+    & h1{
     font-family: 'Dancing Script', cursive;
     letter-spacing: .1rem;
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 500;
+    }
 }
