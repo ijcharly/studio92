@@ -1,7 +1,5 @@
 main {
     background-color: #F4E0E6;
-    /* background-image: url("../img/logo-sin-fondo.PNG");
-    background-repeat:repeat-y; */
     min-width: 100%;
     background-position: center top;
     font-family: 'Inter', sans-serif;
@@ -101,28 +99,6 @@ body {
 }
 /*----------------------------------*/
 /*------------Productos----------------------*/
-// .galeria-servicios {
-//     display: grid;
-//     grid-template-columns: auto;
-//     padding: 10px;
-// }
-
-// .ul-li-productos {
-//     list-style: none;
-//     display: grid;
-//     grid-template-columns: 1fr; 
-//     padding-left: 0;
-
-//     @media (min-width: 576px) and (max-width: 992px) {
-//         grid-template-columns: repeat(2, 1fr);
-//     }
-
-//     @media (min-width: 992px) {
-//         grid-template-columns: repeat(3, 1fr);
-//     }
-
-//     gap: 1rem; 
-// }
 
 .table-productos {
     & th{

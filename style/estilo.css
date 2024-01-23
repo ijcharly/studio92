@@ -68,8 +68,6 @@ header {
 
 main {
   background-color: #F4E0E6;
-  /* background-image: url("../img/logo-sin-fondo.PNG");
-  background-repeat:repeat-y; */
   min-width: 100%;
   background-position: center top;
   font-family: "Inter", sans-serif;
@@ -230,7 +228,6 @@ footer {
 }
 
 iframe {
-  /* border: 0; */
   width: 75%;
   max-height: 7rem;
   border-style: hidden;
